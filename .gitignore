@@ -1,0 +1,104 @@
+# Large data files - exclude raw data but keep sample results
+*.csv
+!mvp_results/patient_subtypes.csv
+!mvp_results/phase3_feature_importance.csv
+!mvp_results/feature_importance.csv
+!data/processed/*.csv
+
+# Exclude very large GTEx and GWAS files
+mvp_results/gtex_heart_lventriclde.csv
+mvp_results/gwas_heart_failure.csv
+mvp_results/expression_preprocessed.csv
+
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+conda_env/
+
+# IDE and Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+.jupyter/
+
+# Logs and databases
+*.log
+logs/
+*.sqlite
+*.db
+*.sqlite3
+
+# Testing
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Misc files
+*.bak
+*.tmp
+*.temp
+.env
+.venv
+*.pem
+*.key
+
+# OS files
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Project-specific large files (keep samples only)
+results/
+pipeline_output.log
+phase_2/
+untitled folder/
+
+# Generated notebooks
+*_merged.ipynb
+*_temp.ipynb
